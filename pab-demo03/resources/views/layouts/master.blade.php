@@ -43,14 +43,14 @@
   </head>
   <body>
     <div class="wrapper">
-      @include('layout.sidebar')
+      @include('layouts.sidebar')
 
       <div class="main-panel">
-        @include('layout.navbar')
+        @include('layouts.header')
 
         @yield('content')
 
-        @include('layout.footer')
+        @include('layouts.footer')
       </div>
     </div>
     <!--   Core JS Files   -->
