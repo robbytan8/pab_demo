@@ -2,8 +2,7 @@
 
 namespace Database\Seeders;
 
-use Database\Factories\CategoryFactory;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -28,6 +27,6 @@ class CategorySeeder extends Seeder
                 'updated_at' => now(),
             ]
         ]);
-        CategoryFactory::factory(10)->create();
+        Category::factory(10)->create();
     }
 }
